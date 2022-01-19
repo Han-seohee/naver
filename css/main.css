@@ -176,7 +176,6 @@ a {
     background-image: url(../images/main_search.png);
     background-size: 323px 234px;
     background-repeat: no-repeat;
-
 }
 .logo::after {
     content: "";
@@ -244,7 +243,7 @@ form {
 }
 /* shortCut */
 .shortCutWrap {
-    width: calc(208px + 21vw);
+    width: calc(208px + 18vw);
     padding: 24px 0 37px;
     margin: 0 auto;
 }
@@ -998,7 +997,6 @@ form {
 .stockGap .rateDown {
     color: #2196f3;
 }
-
 .stockInfo {
     background-color: #f5f8fb;
     border-radius: 22px;
