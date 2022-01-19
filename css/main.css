@@ -1240,13 +1240,15 @@ form {
     padding-top: 5px;
     overflow: hidden;
 }
+.cardTitle h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .cardTitle strong {
     font-size: 17px;
     line-height: 20px;
     letter-spacing: -.5px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 .cardTitle .sub {
     overflow: hidden;
