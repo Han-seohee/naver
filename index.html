@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>NAVER</title>
+</head>
+<body>
+    <div id="skip">
+        <a href="#search">
+            검색 바로가기
+        </a>
+        <a href="#menu">
+            메뉴 바로가기
+        </a>
+        <a href="#weather">
+            날씨 바로가기
+        </a>
+        <a href="#nowSchedule">
+            나우 바로가기
+        </a>
+        <a href="#covid19">
+            코로나19 바로가기
+        </a>
+        <a href="#stock">
+            증시 바로가기
+        </a>
+        <a href="#channelContents">
+            채널 콘텐츠 바로가기
+        </a>
+        <a href="#todayNaver">
+            오늘 네이버 바로가기
+        </a>
+    </div>
+
+    <header>
+        <!-- topMenu -->
+        <div class="topMenu">
+            <button type="button" class="sideMenu">
+                <span class="iconSideMenu">
+                    <span class="blind">메뉴</span>
+                </span>
+            </button>
+            <ul class="iconMyMenu">
+                <li>
+                    <a href="#" class="MyMenuLinkQr">
+                        <span class="qr">
+                            <span class="blind">QR체크인</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="MyMenuLinkPay">
+                        <span class="pay">
+                            <span class="blind">네이버페이</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="MyMenuLinkNotify">
+                        <span class="notify">
+                            <span class="blind">알림</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="MyMenuLinkNa">
+                        <span class="na">
+                            <span class="blind">네이버 Na</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- search -->
+        <div class="searchBoxWrap">
+            <div class="searchBox">
+                <div class="searchInner">
+                    <h1 class="logoWrap">
+                        <a href="#">
+                            <span class="logo"></span>
+                            <span class="blind">NAVER</span>
+                        </a>
+                    </h1>
+                    <form action="">
+                        <div class="inputWrap">
+                            <input type="text" class="searchInput" id="search" placeholder="검색어를 입력해주세요.">
+                        </div>
+                        <button type="button" class="iconMicWrap">
+                            <span class="mic"></span>
+                            <span class="blind">인식검색 음성검색</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav -->
+        <nav class="shortCutWrap" id="menu">
+            <h2 class="blind">바로가기</h2>
+            <ul class="shortCutList">
+                <li class="shortCutItem">
+                    <a href="#" class="shortCutLink">
+                        <div class="bg">
+                            <img src="images/icon_news.png" alt="뉴스판">
+                        </div>
+                        <span class="shortCutTitle">뉴스판</span>
+                    </a>
+                </li>
+                <li class="shortCutItem">
+                    <a href="#" class="shortCutLink">
+                        <div class="bg">
+                            <img src="images/icon_shopping.png" alt="쇼핑판">
+                        </div>
+                        <span class="shortCutTitle">쇼핑판</span>
+                    </a>
+                </li>
+                <li class="shortCutItem">
+                    <a href="#" class="shortCutLink">
+                        <div class="bg">
+                            <img src="images/icon_economy.png" alt="경제지표판">
+                        </div>
+                        <span class="shortCutTitle">경제지표판</span>
+                    </a>
+                </li>
+                <li class="shortCutItem">
+                    <a href="#" class="shortCutLink">
+                        <div class="bg">
+                            <img src="images/icon_sports.png" alt="스포츠판">
+                        </div>
+                        <span class="shortCutTitle">스포츠판</span>
+                    </a>
+                </li>
+                <li class="shortCutItem">
+                    <a href="#" class="shortCutLink">
+                        <div class="bg">
+                            <img src="images/icon_mail.png" alt="메일">
+                        </div>
+                        <span class="shortCutTitle">메일</span>
+                    </a>
+                </li>
+                <li class="shortCutItem">
+                    <a href="#" class="shortCutLink">
+                        <div class="bg">
+                            <img src="images/icon_cafe.png" alt="카페">
+                        </div>
+                        <span class="shortCutTitle">카페</span>
+                    </a>
+                </li>
+                <li class="shortCutItem">
+                    <a href="#" class="shortCutLink">
+                        <div class="bg">
+                            <img src="images/icon_blog.png" alt="블로그">
+                        </div>
+                        <span class="shortCutTitle">블로그</span>
+                    </a>
+                </li>
+                <li class="shortCutItem">
+                    <a href="#" class="shortCutLink">
+                        <div class="bg">
+                            <img src="images/icon_more.png" alt="더보기">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <article class="adBanner">
+        <h2>
+            <a href="#" class="adBannerLink">
+                <img src="images/banner1.png" alt="광고">
+            </a>
+        </h2>
+    </article>
+    
+    <main class="main">
+        <section class="wrap">
+            <h2 class="blind">날씨</h2>
+            <div class="weather regular" id="weather">
+                <div class="weatherPlace">
+                    <div class="placeInfo">
+                        <a href="#">
+                            <div class="iconWeather">
+                                <div class="sun1"></div>
+                                <div class="sun2"></div>
+                            </div>
+                            <div class="weatherInfo">
+                                <strong class="infoMain">
+                                    <em class="temp">0°</em>
+                                    서울
+                                </strong>
+                                <div class="infoSub">
+                                    미세
+                                    <em class="state ">보통</em>
+                                    · 초미세
+                                    <em class="state">보통</em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <button class="weatherPlaceBtn">
+                        <span class="location">내 위치찾기</span>
+                    </button>
+                </div>
+                <div class="weatherNotice">
+                    <p class="noticeGuide">
+                        위치 찾기를 눌러 현 위치의 시간대별·주간날씨와<br/>
+                        미세먼지 예보를 여기에서 바로 보세요
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrap"> <!-- margincollapse 방지-->
+            <div class="now regular" id="nowSchedule">
+                <div class="nowTItleWrap">
+                    <a href="#" class="nowTitleLink">
+                        <h2 class="nowTitle">
+                            <span class="nowLogo">NOW.</span>
+                            <span class="blind">뭐들을까</span>
+                        </h2>
+                    </a>
+                </div>
+                <div class="nowContents">
+                    <div class="scrollArea">
+                        <ul class="nowList">
+                            <li class="nowItem">
+                                <a href="#" class="nowLink">
+                                    <img src="images/schedule_item1.png" class="nowImg" alt="Catch your eye w/ 케플러💜">
+                                    <div class="nowCardLogoWrap">
+                                        <img src="images/schedule_item1_text.png" class="itemTitle" alt="Catch your eye w/ 케플러💜">
+                                    </div>
+                                    <span class="live">LIVE</span>
+                                </a>
+                                <a href="#" class="itemText">
+                                    <h3>Catch your eye w/ 케플러💜</h3>
+                                </a>
+                            </li>
+                            <li class="nowItem">
+                                <a href="#" class="nowLink">
+                                    <img src="images/schedule_item2.png" class="nowImg" alt="Rock Dance 헤드벵잉 데이">
+                                    <div class="nowCardLogoWrap">
+                                        <img src="images/schedule_item2_text.png" class="itemTitle" alt="Rock Dance 헤드벵잉 데이">
+                                    </div>
+                                    <span class="live">LIVE</span>
+                                </a>
+                                <a href="#" class="itemText">
+                                    <h3>Rock Dance 헤드벵잉 데이</h3>
+                                </a>
+                            </li>
+                            <li class="nowItem">
+                                <a href="#" class="nowLink">
+                                    <img src="images/schedule_item3.png" class="nowImg" alt="이상한 나라의 탄 : 18-28">
+                                    <div class="nowCardLogoWrap">
+                                        <img src="images/schedule_item3_text.png" class="itemTitle" alt="이상한 나라의 탄 : 18-28">
+                                    </div>
+                                    <span class="live">LIVE</span>
+                                </a>
+                                <a href="#" class="itemText">
+                                    <h3>이상한 나라의 탄 : 18-28</h3>
+                                </a>
+                            </li>
+                            <li class="nowItem">
+                                <a href="#" class="nowLink">
+                                    <img src="images/schedule_item4.png" class="nowImg" alt="방과후 설렘  6회 확장판">
+                                    <div class="nowCardLogoWrap">
+                                        <img src="images/schedule_item4_text.png" class="itemTitle" alt="방과후 설렘  6회 확장판">
+                                    </div>
+                                    <span class="live">LIVE</span>
+                                </a>
+                                <a href="#" class="itemText">
+                                    <h3>방과후 설렘  6회 확장판</h3>
+                                </a>
+                            </li>
+                            <li class="nowItem">
+                                <a href="#" class="nowLink">
+                                    <img src="images/schedule_item5.png" class="nowImg" alt="세상에 하나뿐인 뮤지션 윤상플리">
+                                    <div class="nowCardLogoWrap">
+                                        <img src="images/schedule_item5_text.png" class="itemTitle" alt="세상에 하나뿐인 뮤지션 윤상플리">
+                                    </div>
+                                    <span class="live">LIVE</span>
+                                </a>
+                                <a href="#" class="itemText">
+                                    <h3>세상에 하나뿐인 뮤지션 윤상플리</h3>
+                                </a>
+                            </li>
+                            <li class="nowItem">
+                                <a href="#" class="nowLink">
+                                    <img src="images/schedule_item6.png" class="nowImg" alt="올데이 야작실 고퀄 밴드라이브">
+                                    <div class="nowCardLogoWrap">
+                                        <img src="images/schedule_item6_text.png" class="itemTitle" alt="올데이 야작실 고퀄 밴드라이브">
+                                    </div>
+                                    <span class="live">LIVE</span>
+                                </a>
+                                <a href="#" class="itemText">
+                                    <h3>올데이 야작실 고퀄 밴드라이브</h3>
+                                </a>
+                            </li>
+                            <li class="nowItem">
+                                <a href="#" class="nowLink">
+                                    <img src="images/schedule_item7.png" class="nowImg" alt="매주 금요일 9시 AOMIX LIVE">
+                                    <div class="nowCardLogoWrap">
+                                        <img src="images/schedule_item7_text.png" class="itemTitle" alt="매주 금요일 9시 AOMIX LIVE">
+                                    </div>
+                                    <span class="live">LIVE</span>
+                                </a>
+                                <a href="#" class="itemText">
+                                    <h3>매주 금요일 9시 AOMIX LIVE</h3>
+                                </a>
+                            </li>
+                            <li class="nowItem">
+                                <a href="#" class="nowLink nowScheduleLink">
+                                    <strong class="nowSchedule">
+                                        나우 편성표
+                                    </strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scheduleWrap">
+                    <a href="#" class="schedule">나우 편성표</a>
+                    <a href="#" class="schedule">쇼핑 편성표</a>
+                </div>
+            </div>
+        </section>
+
+        <article class="wrap">
+            <div class="campaignBanner regular">
+                <h2>
+                    <a href="#" class="campaignBannerLink">
+                        <img src="images/banner2.png" alt="방역패스 아이콘 설치">
+                    </a>
+                </h2>
+            </div>
+        </article>
+
+        <article class="wrap">
+            <div class="issueBanner regular">
+                <h2 class="blind">광고</h2>
+                <a href="#" class="issueBannerLink">
+                    <img src="images/banner3.jpg" alt="광고">
+                </a>
+                <button type="button" class="closeBtn">
+                    <span class="blind">광고 닫기</span>
+                </button>
+            </div>
+        </article>
+
+        <article class="wrap">
+            <div class="adBigBanner">
+                <h2 class="blind">광고</h2>
+                <a href="#" class="adBigBannerLink">
+                    <img src="images/banner4.jpg" alt="광고">
+                </a>
+                <button type="button" class="adCloseBtn">
+                    <span class="blind">광고 닫기</span>
+                </button>
+            </div>
+        </article>
+
+        <section class="wrap">
+            <div class="covid19" id="covid19">
+                <div class="covidChart">
+                    <h2 class="covidTitle">코로나바이러스-19</h2>
+                    <div class="covidCount">
+                        <a href="#" class="covidCountLink">
+                            <strong class="covidCountTitle">신규 확진자</strong>
+                            <em class="covidValue">4,388</em>
+                        </a>
+                        <a href="#" class="covidCountLink">
+                            <strong class="covidCountTitle">백신 1차 접종</strong>
+                            <em class="covidValue">86.5%</em>
+                        </a>
+                        <a href="#" class="covidCountLink">
+                            <strong class="covidCountTitle">백신 완전 접종</strong>
+                            <em class="covidValue">84.2%</em>
+                        </a>
+                    </div>
+                    <div class="covidGraph">
+                        <div class="covidTotal">
+                            <span class="local">
+                                국내
+                                <em class="covidValue">4,007</em>
+                            </span>
+                            <span class="oversea">
+                                해외
+                                <em class="covidValue">381</em>
+                            </span>
+                            <span class="sum">
+                                합계
+                                <em class="covidValue">4,388</em>
+                            </span>
+                        </div>
+                        <div class="covidData">
+                            <div class="dataList">
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.12</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.13</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.14</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.15</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.16</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.17</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.18</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.19</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.20</strong>
+                                </a>
+                                <a href="#" class="column">
+                                    <span class="barChart"></span>
+                                    <strong class="date">1.21</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="covidMenu">
+                    <ul class="covidMenuList">
+                        <li class="covidMenuItem">
+                            <a href="#" class="covidMenuLink status">
+                                <span class="covidMenuTitle">확진현황</span>
+                            </a>
+                        </li>
+                        <li class="covidMenuItem">
+                            <a href="#" class="covidMenuLink vaccine">
+                                <span class="covidMenuTitle">잔여백신알림</span>
+                            </a>
+                        </li>
+                        <li class="covidMenuItem">
+                            <a href="#" class="covidMenuLink clinic">
+                                <span class="covidMenuTitle">선별진료소</span>
+                            </a>
+                        </li>
+                        <li class="covidMenuItem">
+                            <a href="#" class="covidMenuLink fact">
+                                <span class="covidMenuTitle">팩트체크</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <article class="wrap">
+            <div class="naverAppQr regular">
+                <h2 class="blind">네이버앱 QR체크인</h2>
+                <a href="#" class="naverAppQrLink">
+                    <p class="naverAppQr">
+                        QR체크인, 현장결제 <br/>
+                        <em class="qrHighlight">네이버앱</em>
+                        <span class="qrSubText">에서 더 편리하게!</span>
+                    </p>
+                    <span class="qrMore">
+                        앱 사용하기
+                    </span>
+                </a>
+            </div>
+        </article>
+
+        <section class="wrap">
+            <div class="stock regular" id="stock">
+                <h2 class="blind">증시</h2>
+                <div class="stockWrap scrollArea">
+                    <ul class="stockList">
+                        <li class="stockItem">
+                            <a href="#" class="stockLink">
+                                <strong>코스피</strong>
+                                <div class="stockValue">
+                                    <em class="stockNumber">2,972.48</em>
+                                    <div class="stockGap">
+                                        <span class="eq">보합</span>
+                                        <span class="price">0.00</span>
+                                        <span class="rate">0.00%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="stockItem">
+                            <a href="#" class="stockLink">
+                                <strong>코스닥</strong>
+                                <div class="stockValue">
+                                    <em class="stockNumber">991.33</em>
+                                    <div class="stockGap">
+                                        <span class="eq">보합</span>
+                                        <span class="price">0.00</span>
+                                        <span class="rate">0.00%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="stockItem">
+                            <a href="#" class="stockLink">
+                                <strong>나스닥100 선물</strong>
+                                <div class="stockValue">
+                                    <em class="stockNumber">15,893.50</em>
+                                    <div class="stockGap">
+                                        <span class="up">상승</span>
+                                        <span class="priceUp">6.25</span>
+                                        <span class="rateUp">+0.04%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="stockItem">
+                            <a href="#" class="stockLink">
+                                <strong>S&P500 선물</strong>
+                                <div class="stockValue">
+                                    <em class="stockNumber">4,719.00</em>
+                                    <div class="stockGap">
+                                        <span class="up">상승</span>
+                                        <span class="priceUp">2.75</span>
+                                        <span class="rateUp">+0.06%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="stockItem">
+                            <a href="#" class="stockLink">
+                                <strong>환율 USD</strong>
+                                <div class="stockValue">
+                                    <em class="stockNumber">1,187.00</em>
+                                    <div class="stockGap">
+                                        <span class="down">하락</span>
+                                        <span class="priceDown">5.50</span>
+                                        <span class="rateDown">-0.46%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="stockInfo">
+                    <a href="#" class="stockInfoLink">국내 증시</a>
+                    <a href="#" class="stockInfoLink">해외 증시</a>
+                    <a href="#" class="stockInfoLink">경제 지표</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="promotion">
+        <h2 class="blind">프로모션</h2>
+        <div class="wrap">
+            <div class="channelContents" id="channelContents">
+                <ul class="channelList">
+                    <li class="channelItem">
+                        <a href="#" class="channelLink">
+                            <div class="channelInfo">
+                                <h3><strong class="channelTitle">패션뷰티판</strong></h3>
+                                <p class="channelContent">케라스타즈 한정판 에디션 기획전</p>
+                            </div>
+                            <img src="images/channel1.jpg" alt="케라스타즈 한정판 에디션 기획전" class="profile">
+                        </a>
+                    </li>
+                    <li class="channelItem">
+                        <a href="#" class="channelLink">
+                            <div class="channelInfo">
+                                <h3><strong class="channelTitle">이거 하나면 한끼 뚝딱!</strong></h3>
+                                <p class="channelContent">맛있는 메인반찬 레시피 10종</p>
+                            </div>
+                            <img src="images/channel2.jpg" alt="맛있는 메인반찬 레시피 10종" class="profile">
+                        </a>
+                    </li>
+                    <li class="channelItem">
+                        <a href="#" class="channelLink">
+                            <div class="channelInfo">
+                                <strong class="channelTitle">치킨의 변신은 무죄닭</strong>
+                                <p class="channelContent">윈쁠딜 특가로 간식 1+1 쟁여두기</p>
+                            </div>
+                            <img src="images/channel3.jpg" alt="원쁠딜 특가로 간식 1+1 쟁여두기" class="profile">
+                        </a>
+                    </li>
+                    <li class="channelItem">
+                        <a href="#" class="channelLink">
+                            <img src="images/channel4.jpg" alt="강남 85㎡ 아파트를 5억 원에? 토지임대부주택 AtoZ" class="profile">
+                            <div class="channelInfo right">
+                                <h3><strong class="channelTitle">알짜정보는 경제M판</strong></h3>
+                                <p class="channelContent">강남 85㎡ 아파트를 5억 원에? 토지임대부주택 AtoZ</p>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li class="channelItem">
+                        <a href="#" class="channelLink">
+                            <img src="images/channel5.jpg" alt="시간 가는 줄 모르고 보는 웹툰" class="profile">
+                            <div class="channelInfo right">
+                                <h3><strong class="channelTitle">오늘 하루 순삭 가능!</strong></h3>
+                                <p class="channelContent">시간 가는 줄 모르고 보는 웹툰</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="todayNaver" id="todayNaver">
+                <div class="todayTitleWrap">
+                    <h3><strong>오늘 네이버</strong></h3>
+                    <a href="#" class="todayMore">더보기</a>
+                </div>
+                <div class="todayBannerWrap">
+                    <ul class="todayBannerList scrollArea">
+                        <li class="todayBannerItem">
+                            <div class="todayBannerCard">
+                                <a href="#" class="cardImg">
+                                    <img src="images/today1.jpg" alt="QR체크인 바로가기 아이콘 설치!">
+                                </a>
+                                <a href="#" class="category">
+                                    <div class="todayIconWrap">
+                                        <img src="images/today1_icon.png" class="todayProfile" alt="프로필">
+                                    </div>
+                                    <div class="cardTitle">
+                                        <h3><strong>네이버앱</strong></h3>
+                                        <p class="sub">QR체크인 바로가기 아이콘 설치!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="todayBannerItem">
+                            <div class="todayBannerCard">
+                                <a href="#" class="cardImg">
+                                    <img src="images/today2.png" alt="뽐나는 설 준비를 한 번에!">
+                                </a>
+                                <a href="#" class="category">
+                                    <div class="todayIconWrap">
+                                        <img src="images/today2_icon.png" class="todayProfile" alt="프로필">
+                                    </div>
+                                    <div class="cardTitle">
+                                        <h3><strong>완벽한 설날 A to Z</strong></h3>
+                                        <p class="sub">뽐나는 설 준비를 한 번에!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="todayBannerItem">
+                            <div class="todayBannerCard">
+                                <a href="#" class="cardImg">
+                                    <img src="images/today3.png" alt="딱 하루만 인증해도 이벤트 자동 참여!">
+                                </a>
+                                <a href="#" class="category">
+                                    <div class="todayIconWrap">
+                                        <img src="images/today3_icon.png" class="todayProfile" alt="프로필">
+                                    </div>
+                                    <div class="cardTitle">
+                                        <h3><strong>미션인증 밴드 시작하기</strong></h3>
+                                        <p class="sub">딱 하루만 인증해도 이벤트 자동 참여!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="todayBannerItem">
+                            <div class="todayBannerCard">
+                                <a href="#" class="cardImg">
+                                    <img src="images/today4.jpg" alt="새로운 나에 도전하는 새해!">
+                                </a>
+                                <a href="#" class="category">
+                                    <div class="todayIconWrap">
+                                        <img src="images/today4_icon.jpg" class="todayProfile" alt="프로필">
+                                    </div>
+                                    <div class="cardTitle">
+                                        <h3><strong>2022 네이버 새해 발전소</strong></h3>
+                                        <p class="sub">새로운 나에 도전하는 새해!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="paginationWrap">
+                        <button type="button" class="todayPg">
+                            <span class="blind">1페이지</span>
+                        </button>
+                        <button type="button" class="todayPg">
+                            <span class="blind">2페이지</span>
+                        </button>
+                        <button type="button" class="todayPg">
+                            <span class="blind">3페이지</span>
+                        </button>
+                        <button type="button" class="todayPg">
+                            <span class="blind">4페이지</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="fnb">
+            <li class="fnbMenu">
+                <a href="#" class="fnbLink">로그인</a>
+                <a href="#" class="fnbLink">전체서비스</a>
+                <a href="#" class="fnbLink">PC버전</a>
+            </li>
+        </ul>
+        <ul class="fnbInfo">
+            <li class="fnbMenu">
+                <a href="#" class="fnbLink">이용약관</a>
+                <a href="#" class="fnbLink"><strong>개인정보처리방침</strong></a>
+                <a href="#" class="fnbLink">고객센터</a>
+            </li>
+        </ul>
+        <div class="footerLogo">
+            <a href="#" class="footerLogoimg">네이버</a>
+        </div>
+    </footer>
+</body>
+</html>
