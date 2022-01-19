@@ -599,6 +599,7 @@ form {
 .campaignBannerLink {
     display: block;
     width: 100%;
+    text-align: center;
 }
 .campaignBanner img {
     width: calc(100% - 18px);
@@ -612,6 +613,7 @@ form {
 .issueBannerLink {
     display: block;
     width: 100%;
+    text-align: center;
 }
 .issueBanner img {
     width: calc(100% - 18px);
