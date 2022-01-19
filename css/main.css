@@ -5,9 +5,24 @@ body {
     color: #303038;
     font-family: "Malgun Gothic","Arial";
 }
-header,
-.adBanner {
-    background-color: #f4f6f8;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.blind::before {
+    display: block;
+    width: 0;
+    height: 0;
+    content: '\00a0';
+    font-size: 0;
 }
 #skip {
     position: relative;
@@ -28,38 +43,22 @@ header,
 #skip a:focus {
     top: 0;
 }
-a {
-    color: inherit;
-    text-decoration: none;
-}
-.blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-}
-.blind::before {
-    display: block;
-    width: 0;
-    height: 0;
-    content: '\00a0';
-    font-size: 0;
-}
-
 /* header */
+header,
+.adBanner {
+    background-color: #f4f6f8;
+}
 .topMenu {
     display: flex;
     justify-content: space-between;
 }
-.sideMenu {
+.MainMenu {
     background-color: transparent;
     border: none;
     padding: 0;
     margin: 8px 0 0 10px;
 }
-.iconSideMenu {
+.iconMainMenu {
     width: 44px;
     height: 44px;
     background-position: -49px -145px;
@@ -89,7 +88,6 @@ a {
     background-size: 323px 234px;
     background-repeat: no-repeat;
 }
-
 .MyMenuLinkPay {
     padding: 2px 0;
     margin-left: 8px;
@@ -103,7 +101,6 @@ a {
     background-size: 323px 234px;
     background-repeat: no-repeat;
 }
-
 .MyMenuLinkNotify {
     padding: 2px 0;
     margin-left: 1px;
@@ -117,7 +114,6 @@ a {
     background-size: 323px 234px;
     background-repeat: no-repeat;
 }
-
 .MyMenuLinkNa {
     margin-left: 4px;
 }
@@ -130,7 +126,6 @@ a {
     background-size: 323px 234px;
     background-repeat: no-repeat;
 }
-
 /* search */
 .searchBoxWrap {
     max-width: 488px;
@@ -164,7 +159,6 @@ a {
     background-color: transparent;
     padding-left: 51px;
 }
-
 .logoWrap a {
     position: absolute;
     top: 0;
@@ -199,7 +193,6 @@ a {
     border: 2px solid #fff;
     border-radius: 3px;
 }
-
 /* input */
 form {
     display: flex;
@@ -227,7 +220,6 @@ form {
     font-size: 17px;
     color: #BCC3C7;
 }
-
 .iconMicWrap {
     border: none;
     background-color: transparent;
@@ -254,7 +246,6 @@ form {
     left: -1px;
     border: 2px solid #fff;
 }
-
 /* shortCut */
 .shortCutWrap {
     width: calc(208px + 21vw);
@@ -436,7 +427,6 @@ form {
     letter-spacing: -.5px;
     text-align: center;
 }
-
 /* now */
 .now {
     padding-bottom: 16px;
@@ -605,7 +595,6 @@ form {
     float: left;
     background-color: rgba(125,127,133,.2);
 }
-
 /* banner */
 .campaignBannerLink {
     display: block;
@@ -648,7 +637,6 @@ form {
     background-repeat: no-repeat;
     background-position: -343px -187px;
 }
-
 .adBigBanner {
     margin: 5px 0;
     position: relative;
@@ -678,7 +666,6 @@ form {
     right: 6px;
     opacity: .8;
 }
-
 /* covid */
 .covid19 {
     background-color: #fff;
@@ -767,7 +754,6 @@ form {
     display: inline-block;
     margin-top: 0;
 }
-
 .covidData {
     position: relative;
     border-top: 1px solid #eff2f3;
@@ -830,7 +816,6 @@ form {
     white-space: nowrap;
     text-align: center;
 }
-
 /* covidMenu */
 .covidMenu {
     margin-top: 5px;
@@ -877,7 +862,6 @@ form {
     line-height: 15px;
     letter-spacing: -.2px;
 }
-
 /* naverAppQr */
 .naverAppQrLink::before {
     content: "";
@@ -931,7 +915,6 @@ form {
     transform: rotate(45deg);
     margin: 0 4px 1px 2px;
 }
-
 /* stock */
 .stock {
     background-color: #fff;
@@ -1052,7 +1035,6 @@ form {
 .stockInfoLink:first-child::before {
     content: none;
 }
-
 /* promotion - channel */
 .promotion {
     padding-top: 7px;
@@ -1155,7 +1137,6 @@ form {
     vertical-align: top;
     white-space: nowrap;
 }
-
 /* todayNaver */
 .todayNaver {
     background-color: #fff;
@@ -1305,7 +1286,6 @@ form {
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
-
 /* footer */
 footer {
     padding: 36px 0 79px 0;
