@@ -1359,6 +1359,7 @@ footer {
     background-repeat: no-repeat;
 }
 
+/* greendot */
 .greendotBtn {
     display: block;
     position: fixed;
@@ -1375,7 +1376,7 @@ footer {
     transition-duration: .4s;
     transition-delay: .2s;
     transition-timing-function: cubic-bezier(.215,1.19,.37,1);
-    z-index: 2022;
+    z-index: 2;
 }
 .iconGreendot {
     position: absolute;
@@ -1387,6 +1388,199 @@ footer {
     background-image: url(../images/greendot.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.greendotLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+.dimmed {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition-duration: .3s;
+    
+}
+.wheelWrap {
+    position: absolute;
+    right: 0;
+    bottom: -56px;
+    left: 0;
+    height: 335px;
+}
+.wheelRotate {
+    opacity: 1;
+    transform: translate(-50%,0) scale(1); 
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(.215,1.19,.37,1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transition-property: opacity,transform,-webkit-transform;
+    z-index: 2;
+}
+.wheelRotate::before {
+    content: "";
+    display: block;
+    width: 115px;
+    height: 115px;
+    background-image: url(../images/greendotCenter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.wheel {
+    position: relative;
+    width: 335px;
+    height: 335px;
+    background-image: url(../images/wheel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    margin: 0 auto;
+}
+.wheelList {
+    height: 100%;
+    transform: rotate(270deg);
+}
+.wheelList::before {
+    margin: 43px;
+    transform: translate(-50%, -50%) rotate(-112deg);
+    content: "";
+    display: block;
+    width: 69px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 104px;
+    background-color: #e7e8e8;
+}
+.wheelList::after {
+    margin-left: -43px;
+    transform: translate(-50%, -50%) rotate(112deg);
+    content: "";
+    display: block;
+    width: 69px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 104px;
+    background-color: #e7e8e8;
+}
+.wheelItem {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    margin: -31px 0 0 -31px;
+    transform: rotate(-270deg);
+}
+.voice {
+    left: 280px;
+    top: 167.5px;
+}
+.around {
+    left: 247.05px;
+    top: 247.05px;
+}
+.wheelSearch {
+    left: 167.5px;
+    top: 280px;
+}
+.papago {
+    left: 87.9505px;
+    top: 237.05px;
+}
+.shopping {
+    left: 55px;
+    top: 167.5px;
+}
+.qrBarcode {
+    left: 87.9505px;
+    top: 87.9505px;
+}
+.lens {
+    left: 167.5px;
+    top: 55px;
+}
+.music {
+    left: 247.05px;
+    top: 87.9505px;
+}
+.wheelLink {
+    position: relative;
+    display: block;
+    padding: 5px;
+}
+.wheelLink::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 32px;
+    background-image: url(../images/greendotICon.png);
+    background-size: 244px 229px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.voice a::before {
+    background-position: -165px -160px;
+}
+.around a::before {
+    background-position: -216px 0;
+}
+.wheelSearch a::before {
+    background-position: -33px -160px;
+}
+.papago a::before {
+    background-position: -175px -41px;
+}
+.shopping a::before {
+    background-position: -99px -160px;
+}
+.qrBarcode a::before {
+    background-position: -175px -115px;
+}
+.lens a::before {
+    background-position: -33px -197px;
+}
+.music a::before {
+    background-position: -216px -148px;
+}
+.greendotName{
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -.46px;
+    color: #303038;
+    text-align: center;
+}
+.wheelBtn {
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    border: 0;
 }
 
 @media (max-width: 319px) {
