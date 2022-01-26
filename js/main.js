@@ -3,7 +3,7 @@ $('.greendotBtn').click(function(){
     $('.greendotBtn').hide();
 });
 
-$('.wheelBtn').click(function(){
+$('.wheelBtn, .dimmed').click(function(){
     $('.greendotLayer').hide();
     $('.greendotBtn').show();
 });
