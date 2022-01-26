@@ -1571,12 +1571,15 @@ footer {
     text-align: center;
 }
 .wheelBtn {
-    width: 52px;
-    height: 52px;
+    /* width: 52px;
+    height: 60px; */
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
     background-color: transparent;
     position: absolute;
     left: 50%;
-    bottom: 7%;
+    bottom: -1%;
     transform: translate(-50%,-50%);
     z-index: 3;
     border: 0;
@@ -1609,6 +1612,10 @@ footer {
     .wheelWrap {
         bottom: -9px;
     }
+    .wheelBtn {
+        height: 60px;
+        bottom: 11%;
+    }
 }
 @media (min-height: 915px) {
     html {
@@ -1619,6 +1626,10 @@ footer {
     }
     .wheelWrap {
         bottom: -8px;
+    }
+    .wheelBtn {
+        height: 60px;
+        bottom: 11%;
     }
 }
 @media (min-height: 1024px) {
@@ -1631,6 +1642,10 @@ footer {
     .wheelWrap {
         bottom: 101px;
     }
+    .wheelBtn {
+        height: 60px;
+        bottom: 20%;
+    }
 }
 @media (min-height: 1180px) {
     html {
@@ -1642,6 +1657,10 @@ footer {
     .wheelWrap {
         bottom: 257px;
     }
+    .wheelBtn {
+        height: 60px;
+        bottom: 31%;
+    }
 }
 @media (min-height: 1368px) {
     html {
@@ -1652,6 +1671,10 @@ footer {
     }
     .wheelWrap {
         bottom: 445px;
+    }
+    .wheelBtn {
+        height: 65px;
+        bottom: 40%;
     }
 }
 @media (max-width: 280px) {
@@ -1710,5 +1733,11 @@ footer {
     .music {
         left: 210.05px;
         top: 84.9505px;
+    }
+    .wheelBtn {
+        width: 85px;
+        height: 85px;
+        border-radius: 85px;
+        bottom: 1%;
     }
 }
