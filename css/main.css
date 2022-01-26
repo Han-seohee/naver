@@ -1407,7 +1407,6 @@ footer {
     bottom: 0;
     z-index: 2;
     transition-duration: .3s;
-    
 }
 .wheelWrap {
     position: absolute;
@@ -1598,5 +1597,45 @@ footer {
     .regular {
         border-radius: 8px;
         box-shadow: 0 1px 4px 0 rgb(0 0 0 / 6%);
+    }
+}
+@media (min-height: 896px) {
+    html {
+        margin-bottom: 40px;
+    }
+    .greendotBtn {
+        bottom: 56px;
+    }
+}
+@media (min-height: 915px) {
+    html {
+        margin-bottom: 45px;
+    }
+    .greendotBtn {
+        bottom: 60px;
+    }
+}
+@media (min-height: 1024px) {
+    html {
+        margin-bottom: 155px;
+    }
+    .greendotBtn {
+        bottom: 170px;
+    }
+}
+@media (min-height: 1180px) {
+    html {
+        margin-bottom: 310px;
+    }
+    .greendotBtn {
+        bottom: 330px;
+    }
+}
+@media (min-height: 1368px) {
+    html {
+        margin-bottom: 490px;
+    }
+    .greendotBtn {
+        bottom: 510px;
     }
 }
