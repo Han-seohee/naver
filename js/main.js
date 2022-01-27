@@ -33,10 +33,27 @@ $(function() {
     });
 });
 
-$('#rotate').propeller({angle: 270, inertia: 0, speed: 1, step: 45, stepTransitionTime: 200,
+
+// rotate
+$('#rotate').propeller({
+    angle: 270, 
+    inertia: 0, 
+    speed: 1, 
+    step: 45, 
+    stepTransitionTime: 200,
     onRotate: function(){
-         console.log(this.angle);}});
-$('.wheelLink').css('transform', 'rotate('+(angle+now)+'deg)');
+         console.log(this.angle);
+         //아이콘 각도(수정예정)
+         $('.wheelItem').css('transform', 'rotate(45deg)');
+    }
+});
+
+// $('.wheelLink').css('transform', 'rotate('+(angle+now)+'deg)');
+// $('#rotate').mousedown(function(){
+//     $('.wheelItem').css("transform", "rotate(270deg)");
+// });
+
+
 
 // startRotation();
 // function startRotation() {
