@@ -24,6 +24,10 @@ a {
     content: '\00a0';
     font-size: 0;
 }
+.noneScroll {
+    overflow: hidden;
+    height: 100%;
+}
 #skip {
     position: relative;
 }
@@ -1372,10 +1376,10 @@ footer {
     background-color: #fff;
     border: 0;
     transform: translateX(-50%) scale(1);
-    transition-property: opacity,transform,-webkit-transform;
+    /* transition-property: opacity,transform,-webkit-transform;
     transition-duration: .4s;
     transition-delay: .2s;
-    transition-timing-function: cubic-bezier(.215,1.19,.37,1);
+    transition-timing-function: cubic-bezier(.215,1.19,.37,1); */
     z-index: 2;
 }
 .iconGreendot {
@@ -1441,6 +1445,20 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+}
+.wheelRotate::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(136,163,164,.5);
+    filter: blur(16px);
+    z-index: 2;
 }
 .wheel {
     position: relative;
@@ -1571,20 +1589,101 @@ footer {
     text-align: center;
 }
 .wheelBtn {
-    /* width: 52px;
-    height: 60px; */
     width: 120px;
     height: 120px;
     border-radius: 120px;
     background-color: transparent;
     position: absolute;
     left: 50%;
-    bottom: -1%;
+    bottom: 11%;
     transform: translate(-50%,-50%);
     z-index: 3;
     border: 0;
 }
 
+@media (max-width: 299px) {
+    .wheel{
+        transform: scale(0.7701);
+    }
+    .wheelWrap {
+        bottom: -80px;
+    }
+    .wheelRotate::after {
+        width: 85%;
+        height: 85%;
+        top: 25px;
+        left: 25px;
+        border-radius: 85%;
+    }
+    /* .wheel {
+        width: 258px;
+        height: 258px;
+    } */
+    /* .wheelWrap {
+        bottom: -115px;
+    }
+    .wheel {
+        width: 258px;
+        height: 258px;
+    }
+    .wheelList {
+        height: 130%;
+    }
+    .wheelList::before {
+        width: 59px;
+        top: 43%;
+        left: 60%;
+    }
+    .wheelList::after {
+        width: 59px;
+        top: 43%;
+        left: 70%;
+    }
+    .wheelRotate::before {
+        top: 39%;
+    }
+    .wheelRotate::after {
+        top: -4px;
+    } */
+    /* .voice {
+        left: 260px;
+        top: 167.5px;
+    }
+    .around {
+        left: 235.05px;
+        top: 235.05px;
+    }
+    .wheelSearch{
+        left: 167.5px;
+        top: 260px;
+    }
+    .papago {
+        left: 110.9505px;
+        top: 230.05px;
+    }
+    .shopping {
+        left: 80px;
+        top: 167.5px;
+    }
+    .qrBarcode {
+        left: 110.9505px;
+        top: 110.9505px;
+    }
+    .lens {
+        left: 167.5px;
+        top: 80px;
+    }
+    .music {
+        left: 240.05px;
+        top: 100.9505px;
+    }
+    .wheelBtn {
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+        bottom: 35%;
+    } */
+}
 @media (max-width: 319px) {
     .backgroundLink img {
         width: 378px;
@@ -1602,142 +1701,14 @@ footer {
         box-shadow: 0 1px 4px 0 rgb(0 0 0 / 6%);
     }
 }
-@media (min-height: 896px) {
-    html {
-        margin-bottom: 40px;
+@media (min-height : 1368px) {
+    footer {
+        margin-bottom: 100px;
     }
     .greendotBtn {
-        bottom: 56px;
+        bottom: 160px;
     }
     .wheelWrap {
-        bottom: -9px;
-    }
-    .wheelBtn {
-        height: 60px;
-        bottom: 11%;
-    }
-}
-@media (min-height: 915px) {
-    html {
-        margin-bottom: 45px;
-    }
-    .greendotBtn {
-        bottom: 60px;
-    }
-    .wheelWrap {
-        bottom: -8px;
-    }
-    .wheelBtn {
-        height: 60px;
-        bottom: 11%;
-    }
-}
-@media (min-height: 1024px) {
-    html {
-        margin-bottom: 155px;
-    }
-    .greendotBtn {
-        bottom: 170px;
-    }
-    .wheelWrap {
-        bottom: 101px;
-    }
-    .wheelBtn {
-        height: 60px;
-        bottom: 20%;
-    }
-}
-@media (min-height: 1180px) {
-    html {
-        margin-bottom: 310px;
-    }
-    .greendotBtn {
-        bottom: 330px;
-    }
-    .wheelWrap {
-        bottom: 257px;
-    }
-    .wheelBtn {
-        height: 60px;
-        bottom: 31%;
-    }
-}
-@media (min-height: 1368px) {
-    html {
-        margin-bottom: 490px;
-    }
-    .greendotBtn {
-        bottom: 510px;
-    }
-    .wheelWrap {
-        bottom: 445px;
-    }
-    .wheelBtn {
-        height: 65px;
-        bottom: 40%;
-    }
-}
-@media (max-width: 280px) {
-    .wheelWrap {
-        bottom: -128px;
-    }
-    .wheelRotate::before {
-        top: 35%;
-    }
-    .wheel {
-        width: 235px;
-        height: 235px;
-    }
-    .wheelList::before {
-        width: 55px;
-        top: 37%;
-        left: 44%;
-    }
-    .wheelList::after {
-        width: 55px;
-        top: 37%;
-        left: 55%;
-    }
-    .wheelItem {
-        width: 56px;
-        height: 0;
-    }
-    .voice {
-        left: 234px;
-        top: 148.5px;
-    }
-    .around {
-        left: 209.05px;
-        top: 210.05px;
-    }
-    .wheelSearch {
-        left: 150.5px;
-        top: 232px;
-    }
-    .papago {
-        left: 94.9505px;
-        top: 203.05px;
-    }
-    .shopping {
-        left: 73px;
-        top: 146.5px;
-    }
-    .qrBarcode {
-        left: 93.9505px;
-        top: 94.9505px;
-    }
-    .lens {
-        left: 146.5px;
-        top: 67px;
-    }
-    .music {
-        left: 210.05px;
-        top: 84.9505px;
-    }
-    .wheelBtn {
-        width: 85px;
-        height: 85px;
-        border-radius: 85px;
-        bottom: 1%;
+        bottom: 95px;
     }
 }
